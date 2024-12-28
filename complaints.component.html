@@ -1,0 +1,13 @@
+<div class="complaints-container">
+    <h2>Submit Your Complaint</h2>
+    <form (ngSubmit)="submitComplaint()" #complaintForm="ngForm">
+      <label for="complaint">Complaint:</label>
+      <textarea id="complaint" [(ngModel)]="complaintText" name="complaintText" required></textarea>
+  
+      <label for="image">Upload Image:</label>
+      <input type="file" (change)="onFileChange($event)" accept="image/*">
+  
+      <button type="submit" [disabled]="!complaintText">Submit Complaint</button>
+    </form>
+  </div>
+  

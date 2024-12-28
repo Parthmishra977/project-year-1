@@ -1,0 +1,14 @@
+<div class="voting-container">
+    <h2>Voting on Complaints</h2>
+    <div *ngFor="let complaint of complaints">
+      <div class="complaint-item">
+        <img [src]="complaint.imageUrl" *ngIf="complaint.imageUrl" alt="Complaint Image">
+        <p>{{ complaint.text }}</p>
+        <button (click)="upvoteComplaint(complaint)">Upvote</button>
+        <p>Upvotes: {{ complaint.upvotes }}</p>
+        <button (click)="markAsSolved(complaint)">Mark as Solved</button>
+        <div *ngIf="complaint.solved" class="solved-tag">Problem Solved</div>
+      </div>
+    </div>
+  </div>
+  

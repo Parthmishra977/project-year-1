@@ -1,0 +1,61 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  /* Specific component styles */
+  .main-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .complaints-container, .voting-container {
+    padding: 20px;
+  }
+  
+  .complaint-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .solved-tag {
+    background-color: #28a745;
+    color: white;
+    padding: 5px;
+    margin-top: 10px;
+  }
+  
